@@ -31,9 +31,9 @@ class GuessingGame {
     this.max = this.m
   }
 
-    greater() {
-
-    }
+  greater() {
+    this.min = this.m
+  }
 }
 
 module.exports = GuessingGame;
