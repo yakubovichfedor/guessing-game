@@ -18,9 +18,14 @@ class GuessingGame {
     this.min = 0
   }
 
-    guess() {
+  guess() {
+    if (this.min > this.max)
+      return this.arr[this.m]
 
-    }
+    this.m = Math.round((this.min + this.max) / 2)
+
+    return this.arr[this.m]
+  }
 
     lower() {
 
