@@ -27,9 +27,9 @@ class GuessingGame {
     return this.arr[this.m]
   }
 
-    lower() {
-
-    }
+  lower() {
+    this.max = this.m
+  }
 
     greater() {
 
