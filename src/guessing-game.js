@@ -6,9 +6,17 @@ class GuessingGame {
     this.m = null
   }
 
-    setRange(min, max) {
+  setRange(min, max) {
+    let arr = []
 
+    for (let i = 0, j = min; j <= max; i++, j++) {
+      arr[i] = j
     }
+
+    this.arr = arr
+    this.max = arr.length - 1
+    this.min = 0
+  }
 
     guess() {
 
